@@ -1,56 +1,56 @@
 // Program a function that counts the number of characters in a text string
 
 const charactersCount = (string = "")=> 
-         (!string) 
-         ? console.warn("No string was added") 
-         : console.info(`The string "${string}" has ${string.length} characters`);
+   (!string) 
+   ? console.warn("No string was added") 
+   : console.info(`The string "${string}" has ${string.length} characters`);
 
-         charactersCount();
-         charactersCount("Hi Maria Guaba");
+   charactersCount();
+   charactersCount("Hi Maria Guaba");
 
 // Program a function that returns the trimmed text based on the specified number of characters
 
 function textCut (text, maxLenght) {
-        if (text.length <= maxLenght) {
-        return text;
-        } else {
-        return text.slice(0, maxLenght);
-        }
+    if (text.length <= maxLenght) {
+    return text;
+    } else {
+    return text.slice(0, maxLenght);
+    }
 }
 
-       let text = "Mochi y cookie don't get along";
-       let maxLenght = 20;
+    let text = "Mochi y cookie don't get along";
+    let maxLenght = 20;
 
-       let cuttedText = textCut (text, maxLenght);
-       console.log(cuttedText);
+    let cuttedText = textCut (text, maxLenght);
+    console.log(cuttedText);
 
 //or
 
 const textCut = (string = "", length = undefined)=> 
-         (!string) 
-          ? console.warn("No string was added") 
-          :(length === undefined)
-           ? console.warn("You didn't add the lenght")
-           : console.info(string.slice(0, length));
+    (!string) 
+    ? console.warn("No string was added") 
+    :(length === undefined)
+     ? console.warn("You didn't add the lenght")
+     : console.info(string.slice(0, length));
 
-         textCut("Hello Maria", 6);
-         textCut();
-         textCut("Hello Maria");
+    textCut("Hello Maria", 6);
+    textCut();
+    textCut("Hello Maria");
 
 //Program  a function that, given a string, returns an array of texts separated by a certain character
 
 const separateByCharacters = (string = "", separator = undefined)=> 
-         (!string) 
-          ? console.warn("No string was added") 
-          : (separator === undefined)
-           ? console.warn("The character separator was not added")
-           : console.info(string.split(separator));
+    (!string) 
+    ? console.warn("No string was added") 
+    : (separator === undefined)
+     ? console.warn("The character separator was not added")
+     : console.info(string.split(separator));
 
-           separateByCharacters("I know you were trouble when you walked in", " ");
-           separateByCharacters("Jan,Feb,Mar,Abr,May,Jun",",");
-           separateByCharacters();
-           separateByCharacters("Hi Anabel");
-           separateByCharacters("","-");
+    separateByCharacters("I know you were trouble when you walked in", " ");
+    separateByCharacters("Jan,Feb,Mar,Abr,May,Jun",",");
+    separateByCharacters();
+    separateByCharacters("Hi Anabel");
+    separateByCharacters("","-");
 
 //Program a function that repeats a text X times
 
